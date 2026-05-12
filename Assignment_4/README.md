@@ -13,4 +13,4 @@ A race condition occurs when multiple threads read and write to a shared variabl
 A Mutex (Mutual Exclusion) acts as a lock. By wrapping the increment logic inside a `with mutex:` block, I created a "critical section". Even though I kept the `time.sleep(0)` inside Part 2 to force the thread to yield the CPU, the lock prevents any other thread from entering the critical section. The other threads are forced to wait until the first thread wakes up, finishes the addition, and releases the lock. This ensures absolute data integrity.
 
 ## Proof of Execution
-<img width="957" height="290" alt="image" src="https://github.com/user-attachments/assets/34a71bb7-1ccb-4285-99a4-f50dddf733fb" />
+<img width="1221" height="476" alt="image" src="https://github.com/user-attachments/assets/d94a86e2-4fd5-4a3f-91cf-1ae5649d3c97" />
